@@ -1,13 +1,17 @@
-import { useState } from 'react'
-
-type ButtonProps = {
+export type ButtonProps = {
+  count: number
+  setCount(): void
   disabled?: boolean
 }
 
-export const Button = ({ disabled }: ButtonProps) => {
+export const Button = ({ count, setCount, disabled }: ButtonProps) => {
   return (
-    <button name='button' title='Button' disabled={disabled}>
-      Button
+    <button
+      onClick={setCount}
+      aria-label='button'
+      disabled={disabled}
+    >
+      count is {count}
     </button>
   )
 }
