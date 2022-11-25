@@ -17,4 +17,10 @@ export default defineConfig((configEnv) => ({
     tsConfigPaths(),
     svgrPlugin(),
   ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: '.vitest//setup.ts',
+    css: true,
+  },
 }))
