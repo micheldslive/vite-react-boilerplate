@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import { Button } from './components'
 
-function App () {
+function App() {
   const [count, setCount] = useState(0)
 
   const handleCount = () => setCount((count) => count + 1)
