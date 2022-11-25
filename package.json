@@ -10,6 +10,7 @@
     "lint:fix": "yarn lint --fix",
     "coverage": "vitest run --coverage",
     "test": "vitest",
+    "test:run": "vitest --run",
     "test:ui": "vitest --ui",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o .startbook",
