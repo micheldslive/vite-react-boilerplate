@@ -8,10 +8,13 @@ export const parameters = {
   },
 }
 
+import '../src/index.css'
+import '../src/App.css'
+
 export const decorators = [
   (Story) => (
-    <div className='my-app'>
+    <div className='App'>
       <Story />
     </div>
   ),
-];
+]
