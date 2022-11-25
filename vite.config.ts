@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import pkg from 'vite-plugin-linter'
 import tsConfigPaths from 'vite-tsconfig-paths'
+import svgrPlugin from 'vite-plugin-svgr'
 
 const { EsLinter, linterPlugin } = pkg
 
@@ -14,5 +15,6 @@ export default defineConfig((configEnv) => ({
       linters: [new EsLinter({ configEnv })],
     }),
     tsConfigPaths(),
+    svgrPlugin(),
   ],
 }))
