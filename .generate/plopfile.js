@@ -31,6 +31,11 @@ module.exports = (plop) => {
         templateFile: "templates/test.tsx.hbs",
       },
       {
+        type: "add",
+        path: "../src/components/{{dashCase name}}/{{dashCase name}}.styles.ts",
+        templateFile: "templates/styles.ts.hbs",
+      },
+      {
         type: "append",
         path: "../src/components/index.ts",
         pattern: "",

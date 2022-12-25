@@ -1,3 +1,5 @@
+import { ButtonContent } from "./button.styles"
+
 export type ButtonProps = {
   count: number
   setCount(): void
@@ -6,8 +8,8 @@ export type ButtonProps = {
 
 export const Button = ({ count, setCount, disabled }: ButtonProps) => {
   return (
-    <button onClick={setCount} aria-label='button' disabled={disabled}>
+    <ButtonContent onClick={setCount} aria-label='button' disabled={disabled}>
       count is {count}
-    </button>
+    </ButtonContent>
   )
 }
