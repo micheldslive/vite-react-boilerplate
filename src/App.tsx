@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className='App'>
-      <div>
+      <div className='AppContent'>
         <a href='https://vitejs.dev' target='_blank' rel='noreferrer'>
           <img src='/vite.svg' className='logo' alt='Vite logo' />
         </a>
@@ -19,7 +19,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className='card'>
+      <div className='card p-4 flex flex-col items-center gap-5'>
         <Button count={count} setCount={handleCount} />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
